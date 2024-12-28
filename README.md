@@ -1,6 +1,6 @@
-# Data Integration and Automation Project
+# Extract Tranform Load (ETL)
 
-## Project Overview -- Extract Tranform Load (ETL)
+## Project Overview -- Data Integration and Automation Project
 This repository showcases an ETL pipeline designed to automate the integration of external API data into an organizational relational database (SQL Server database). The contents shown in this repository is for demonstrative purposes and efforts have been made to protect student and institutional data, this repository is meant to demonstrate my ability to handle and transform data from an API creating a pipeline to our company database so that reporting is possible. 
 
 ## Technologies Used
@@ -20,9 +20,10 @@ This repository showcases an ETL pipeline designed to automate the integration o
 - Enhanced the timeliness and accuracy of reports, supporting better decision-making.
 
 ## How to Use This Repository
-- `data_fetcher.py`: Script for fetching data from external APIs. This is the E, Extract.
-- `data_transformer.py`: Contains the data cleaning and transformation logic. This is the T, Transform.
-- `data_storage.sql`: SQL scripts for integrating processed data into the database. This is the L, Load.
+The three workbook files below are selected from a larger parent .py and .env file (not posted to GitHub) which consolidates the code to a single file. This is meant to elaborate on each step while keeping much of the content generalized.
+- `data_fetcher.ipynb`: Script for fetching data from external APIs. This is the E, Extract.
+- `data_transformer.ipynb`: Contains the data cleaning, schema creation, and transformation logic. This is closest to the T, Transform., as we are getting it dialed in to fit to the designed database schema
+- `data_loader.sql`: This is the 'transaction' that enables integrating processed data into the database. This is the L, Load.
 
 ## Setup and Installation
 - **Environment Setup:** To replicate this project or use parts of it, start by setting up a Python virtual environment and installing dependencies.
